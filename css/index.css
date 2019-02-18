@@ -1,0 +1,171 @@
+
+/** banner轮播 **/
+.banner{
+	height:11.7rem;
+	position:relative;
+}
+.bannerTitle{
+	font-size:.44rem;
+	color:#333;
+	top:2.5rem;
+	width:100%;
+	text-align:center;
+	height:.93rem;
+	line-height:.93rem;
+	position:absolute;
+}
+/** 内容 **/
+.weDO{
+	font-size:.4rem;
+	color:#333;
+	text-align:center;
+	padding-top:2rem;
+	line-height:2.24rem;
+}
+.chaiFen{
+	height:4rem;
+	background:rgba(248,248,248,1) url(../img/chaiFen.png) 1.54rem .08rem no-repeat;
+	background-size:1.88rem 3.84rem;
+}
+.weDOtext{
+	float:left;
+	
+}
+.weDOtext p{
+	line-height:.6rem;
+	font-size:.34rem;
+}
+.weDOtext.right{
+	margin-left:47.2%;
+	padding-top:.54rem;
+	
+}
+
+.weDOtext.left{
+	margin-left:11.6%;
+	padding-top:.48rem;
+}
+.weDOtext ul{
+	width:5.27rem;
+}
+
+.weDOtext li{
+	float:left;
+	min-width:2.4rem;
+	padding-left:.23rem;
+	line-height:.52rem;
+	font-size:.26rem;
+	position:relative;
+	color:RGBA(51, 51, 51, 1);
+
+}
+@media screen and (max-width: 320px) {
+   .weDOtext ul{
+		width:5.27rem;
+	}
+	.weDOtext li{
+		min-width:2.5rem;
+		margin-right:.0rem;
+	}
+}
+.weDOtext li:before{
+	content:'';
+	display:block;
+	width:.13rem;
+	position:absolute;
+	height:.13rem;
+	background:#d39c7b;
+    top:0.15rem;
+	border-radius:50%;
+	left:0;
+}
+.shopCity{
+	background:#fff url(../img/shopCity.png) 74.8% .08rem no-repeat;
+	background-size:1.88rem 3.84rem;
+	height:4rem;
+}
+.youxi{
+	background:rgba(248,248,248,1) url(../img/youxiBj.png) 1.54rem .08rem no-repeat;
+	background-size:1.88rem 3.84rem;
+}
+.ruanJian{
+	background:#fff url(../img/ruanjianBj.png) 74.8%  .08rem no-repeat;
+	background-size:1.88rem 3.84rem;
+}
+.nanTi{
+	padding-top:1.44rem;
+}
+.conTitle{
+	text-align:center;
+	font-size:.37rem;
+	line-height:.85rem;
+}
+.conNanTi{
+	height:5rem;
+	background:url(../img/nanti.png) no-repeat;
+	background-size:100% 5rem;
+}
+.service{
+	height:5.02rem;
+	background:url(../img/service.png) no-repeat;
+	background-size:100% 5.02rem;
+	margin-bottom:.56rem;
+}
+.ganshi,.gouxiang{
+	height:5rem;
+	margin-bottom:2.18rem;
+
+}
+.gouxiang{
+	background:url(../img/gouxiang.png) no-repeat;
+	background-size:contain;;
+}
+.ganshi{
+	background:url(../img/ganshi.png) no-repeat;
+	background-size:contain;
+}
+.ganboqu{
+	height:6.13rem;
+	background:url(../img/ganBoQu.png) no-repeat;
+	background-size:100% 6.13rem;
+	margin-bottom:2.18rem;
+}
+
+.perfectDesign {
+	height:3.33rem;
+	background:url(../img/perfectDesign.jpg) no-repeat;
+	background-size:cover;
+	padding-top:0.69rem;
+	position:relative;
+}
+
+.perfectDesign a{
+    display: inline-block;
+    background: url(../img/perfectBtn.jpg) no-repeat;
+    background-size: contain;
+    width: 4.52rem;
+    height: 1.96rem;
+    margin: 0 auto;
+}
+.perfectDesign {
+	text-align:center;
+}
+.perfectDesign  span{
+	line-height:.57rem;
+	color:#fff;
+	display:block;
+	font-size:.4rem;
+	padding-top:.3rem;
+}
+.perfectDesign p{
+	line-height:.39rem;
+	font-size:15px;
+	color:#fff;
+}
+/** ------banner-------------- **/
+@media (min-width: 768px){
+	
+	.carousel figure {
+		width: 25%!important;
+	}
+}

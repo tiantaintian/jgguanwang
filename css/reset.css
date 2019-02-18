@@ -1,0 +1,207 @@
+/** 清除内外边距 **/
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,dl,dt,dd,input,select,textarea{margin:0;padding:0;}
+
+/** 设置默认字体 **/
+body{font-family:Verdana,Tahoma,Arial,Helvetica,sans-serif;-webkit-user-select: none;-webkit-text-size-adjust: 100%;}
+
+/** 重置图片元素 **/
+img{border:none;vertical-align:top;display:block;max-width:100%;}
+
+/** 重置列表元素 **/
+li{list-style:none;}
+
+/** 重置超链接元素 **/
+a{
+	text-decoration:none;
+	color: inherit;
+}
+
+/** 去除textarea、input文本框的resize outline样式 **/
+textarea{resize:none;outline: none;}
+input{outline:none;}
+
+/**通用浮动类元素 **/
+.fl{float:left;}
+.fr{float:right;}
+
+/*清浮动*/
+.clearfix{zoom:1;}
+.clearfix:after{content:"";display:block;clear:both;}
+/* 多余文字...显示（单行） */
+.ellip{
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+}
+/* 多余文字...显示（多行） */
+.multiEllip{
+	overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	color: #333;
+}
+.inpRadCheck{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 3;
+	opacity: 0;
+}
+/* 三角形 */
+.triSpan{
+	width:0px;
+	height:0px;
+	position:absolute;
+}
+/* 清除a标签touchend时默认的灰色背景 */
+a,input,textarea,button{
+	-webkit-tap-highlight-color:transparent;
+}
+button,input,textarea {
+  /* 解决ios下自带的圆角 */
+  -webkit-appearance: none;
+  border-radius: 0px;
+}
+/* 英文下强制换行 */
+.breakAll{
+	word-wrap:break-word;
+	overflow:hidden;
+	word-break:break-all;
+}
+
+
+/* 首页的头部 */
+.header{
+	width:100%;
+	line-height:1.6rem;
+	height:1.6rem;
+	background:url(../img/headBj.jpg) repeat-x;
+}
+ .header .logo{
+	width:5.58rem;
+	margin-left:1.81rem;
+	margin-top:0.41rem;
+	height:0.62rem;
+}
+.header .logo img{
+	width:100%;
+}
+
+.head_icon{
+	width:0.64rem;
+	background:url(../img/head_icon.png) no-repeat;
+	background-size:cover;
+	height:0.52rem;
+	margin-right:.37rem;
+	margin-top:.52rem;
+}
+.navbar{
+	margin:0;
+	height:1.6rem;
+	background:url(../img/headBj.jpg) repeat-x;
+}
+.navbar-brand {
+	width: 5.58rem;
+    margin-left: 1.81rem;
+    margin-top: 0.45rem;
+    height: 0.62rem;
+    display: block;
+}
+.nav-margin-top{
+	margin-top:1.6rem;
+}
+@media (min-width: 768px){
+	.navbar-collapse{
+		background:none;
+	}
+	.navbar-nav > li > a {
+		height:1.63rem;
+		padding:0 .14rem;
+		line-height:1.63rem;
+		color:#fff;
+	}
+	.navbar-brand {
+		width: 4.58rem;
+		margin-left: 1.81rem;
+		margin-top: 0.44rem;
+	}
+	.carousel figure {
+		width: 35%;
+	}
+}
+.navbar-brand {
+		margin-top: 0.55rem;
+}
+@media screen and (min-width:768px) and (max-width: 991px){
+	.navbar .navbar-collapse{
+		background:#989da0;
+	}
+	.navbar-header{
+		float:none;
+	}
+	.navbar-nav{
+		margin:0;
+	}
+	.nav > li > a:hover, .nav > li > a:focus{
+	background:none;
+	color: #000;
+	}
+}
+@media (max-width: 768px){
+	.navbar-collapse{
+		background:#fff;
+	}
+	
+}
+.navbar-header{
+	height:1.6rem;
+}
+.navbar-nav{
+	font-size:0.373rem;
+}
+
+.nav > li > a:hover, .nav > li > a:focus{
+	background:#dadee0;
+	color:#000;
+}
+.dropdown-menu{
+	min-width: 2.8rem;
+}
+/* 底部公司信息*/
+.CompanyInformation{
+	padding-bottom: .21rem;
+	background:#eee;
+	text-align:center;
+}
+.CompanyInformation h3{
+	line-height:1.26rem;
+	font-size:.4rem;
+	color:#333;
+}
+.CompanyInformation ul{
+	padding-left:0.6rem;
+	text-align:left;
+	padding-right:.1rem;
+	line-height:0.47rem;
+	font-size:.26rem;
+	color:#909090;
+}
+.contact_btn{
+	display:flex;
+	flex-flow:row nowrap;
+	justify-content: space-around;
+}
+.contact_btn button{
+	display:block;
+	font-size:.4rem;
+	width: 46.6%;
+	float:left;
+	color:#fff;
+	margin:.13rem .16rem;
+	border:none;
+	height:1.06rem;
+	background:RGBA(144, 203, 236, 1);
+}
